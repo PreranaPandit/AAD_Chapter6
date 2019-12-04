@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.example.aad_chapter6.fragments.FirstFragment;
 import com.example.aad_chapter6.fragments.SecondFragment;
+import com.example.aad_chapter6.fragments.SumFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(ststus)
         {
-            FirstFragment firstFragment = new FirstFragment();
+            SumFragment firstFragment = new SumFragment();
             fragmentTransaction.replace(R.id.fragmentContainer,firstFragment);
             fragmentTransaction.commit();
             btnFragment.setText("Load second fragment");
